@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.subethamail.wiser.Wiser;
 import org.subethamail.wiser.WiserMessage;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 /**
@@ -18,7 +19,8 @@ public class MailService {
 
     private Wiser server;
 
-    public void start() {
+    @PostConstruct
+    public void autoStart() {
         server = new Wiser();
         server.setPort(port);
         server.start();

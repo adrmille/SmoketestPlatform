@@ -20,8 +20,7 @@ public class SmoketestApplication {
     @PostConstruct
     private void init() {
 
-        // Start mail mock service
-        mailService.start();
+        // TODO Smoketest code here
 
     }
 
