@@ -6,4 +6,6 @@ Goals:
 * Start an in memory database and load test datas
 * Run smoketests
   
-Time constraint: should not take more than 24h to implement.
+Constraints:
+* Should not take more than 24h to implement.
+* Minimalistic code & easy to read and extends
