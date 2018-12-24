@@ -8,5 +8,6 @@ Using Springboot to boot a smoketest platform.
 * Run smoketests
   
 ## Constraints:
-* Should not take more than 24h to implement.
+* Should not take more than 24h to implement
 * Minimalistic code & easy to read and extends
+* Application is self-contained, should only accept localhost requests
