@@ -17,13 +17,18 @@ public class MailService {
     @Value("${mail.server.port:25}")
     private int port;
 
+    @Value("${mail.server.autostart:false}")
+    private boolean autostart;
+
     private Wiser server;
 
     @PostConstruct
     public void autoStart() {
-        server = new Wiser();
-        server.setPort(port);
-        server.start();
+        if (autostart) {
+            server = new Wiser();
+            server.setPort(port);
+            server.start();
+        }
     }
 
     /* FIXME For later use */
